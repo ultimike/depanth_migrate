@@ -15,5 +15,5 @@
         "source": "http://cgit.drupalcode.org/sandbox-ultimike-2876296"
     },
     "license": "GPL-2.0+",
-    "minimum-stability": "dev",
+    "minimum-stability": "dev"
 }
