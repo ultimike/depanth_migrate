@@ -1,0 +1,9 @@
+name: depanth Migrate
+type: module
+description: Defines migrations for DrupalEasy + Pantheon example site.
+core: 8.x
+package: DrupalEasy
+dependencies:
+  - migrate_plus
+  - migrate_source_csv
+  - migrate_tools
