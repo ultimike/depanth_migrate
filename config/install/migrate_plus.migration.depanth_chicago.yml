@@ -5,7 +5,7 @@ migration_groups:
 
 source:
   plugin: csv
-  path: '/var/www/web/modules/custom/depanth_migrate/Current_Employee_Names__Salaries__and_Position_Titles.csv'
+  path: '/var/www/web/modules/contrib/depanth_migrate/Current_Employee_Names__Salaries__and_Position_Titles.csv'
   header_row_count: 1
   keys:
     - Name
