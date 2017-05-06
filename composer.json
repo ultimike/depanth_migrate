@@ -1,8 +1,8 @@
 {
-    "name": "drupal/depanth_migrate",
+    "name": "ultimike/depanth_migrate",
     "description": "Defines migrations for DrupalEasy + Pantheon example site.",
     "type": "drupal-module",
-    "homepage": "https://www.drupal.org/project/2876296",
+    "homepage": "https://github.com/ultimike/depanth_migrate",
     "authors": [
         {
             "name": "Michael Anello (ultimike)",
@@ -11,8 +11,8 @@
         }
     ],
     "support": {
-        "issues": "https://www.drupal.org/project/issues/2876296",
-        "source": "http://cgit.drupalcode.org/sandbox-ultimike-2876296"
+        "issues": "https://github.com/ultimike/depanth_migrate",
+        "source": "https://github.com/ultimike/depanth_migrate"
     },
     "license": "GPL-2.0+",
     "minimum-stability": "dev"
