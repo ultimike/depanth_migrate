@@ -15,5 +15,10 @@
         "source": "https://github.com/ultimike/depanth_migrate"
     },
     "license": "GPL-2.0+",
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {   
+        "drupal/migrate_plus": "^2.0",
+        "drupal/migrate_source_csv": "^2.0",
+        "drupal/migrate_tools": "^2.0",
+    }
 }
