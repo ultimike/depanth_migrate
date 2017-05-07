@@ -14,38 +14,57 @@ process:
   title:
     -
       plugin: callback
-      callable: ucfirst
+      callable:
+        - '\Drupal\Component\Utility\Unicode'
+        - strtolower
       source: 'First name'
+    -
+      plugin: callback
+      callable:
+        - '\Drupal\Component\Utility\Unicode'
+        - ucwords
   field_source_id: ID
   field_full_or_part_time: 'Full or Part-Time'
   field_salary_or_hourly: 'Salary or Hourly'
   field_typical_hours: 'Typical Hours'
   field_annual_salary:
-    -
-      plugin: callback
-      source: 'Annual Salary'
-      callable:
-        - '\Drupal\depanth_migrate\depanthUtility'
-        - remove_dollar_sign
+    plugin: callback
+    source: 'Annual Salary'
+    callable:
+      - '\Drupal\depanth_migrate\depanthUtility'
+      - remove_dollar_sign
   field_hourly_rate:
-    -
-      plugin: callback
-      source: 'Hourly Rate'
-      callable:
-        - '\Drupal\depanth_migrate\depanthUtility'
-        - remove_dollar_sign
+    plugin: callback
+    source: 'Hourly Rate'
+    callable:
+      - '\Drupal\depanth_migrate\depanthUtility'
+      - remove_dollar_sign
   field_employee_job_title:
     -
       plugin: callback
-      callable: ucfirst
+      callable:
+        - '\Drupal\Component\Utility\Unicode'
+        - strtolower
       source: 'Job Titles'
+    -
+      plugin: callback
+      callable:
+        - '\Drupal\Component\Utility\Unicode'
+        - ucwords
     -
       plugin: entity_generate
   field_employee_department:
     -
       plugin: callback
-      callable: ucfirst
+      callable:
+        - '\Drupal\Component\Utility\Unicode'
+        - strtolower
       source: 'Department'
+    -
+      plugin: callback
+      callable:
+        - '\Drupal\Component\Utility\Unicode'
+        - ucwords
     -
       plugin: entity_generate
   uid:
