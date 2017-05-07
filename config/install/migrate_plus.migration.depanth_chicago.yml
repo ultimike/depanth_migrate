@@ -36,18 +36,18 @@ process:
         - remove_dollar_sign
   field_employee_job_title:
     -
-      plugin: entity_generate
-    -
       plugin: callback
       callable: ucfirst
       source: 'Job Titles'
-  field_employee_department:
     -
       plugin: entity_generate
+  field_employee_department:
     -
       plugin: callback
       callable: ucfirst
       source: 'Department'
+    -
+      plugin: entity_generate
   uid:
     plugin: default_value
     default_value: 1
