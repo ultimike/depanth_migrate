@@ -17,9 +17,9 @@
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "require": {   
-        "drupal/migrate_plus": "^2.0",
+        "drupal/migrate_plus": "^4.0",
         "drupal/migrate_source_csv": "^2.0",
-        "drupal/migrate_tools": "^2.0",
+        "drupal/migrate_tools": "^4.0",
         "drupal/features": "^3.5"
     }
 }
