@@ -1,0 +1,13 @@
+name: Employee
+description: 'Provides Employee content type and related configuration. Use this to create new employee records.'
+type: module
+core: 8.x
+version: 8.x-1.0
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - options
+  - path
+  - taxonomy
+  - user

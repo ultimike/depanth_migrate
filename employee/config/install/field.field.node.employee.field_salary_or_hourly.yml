@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary_or_hourly
+    - node.type.employee
+  module:
+    - options
+id: node.employee.field_salary_or_hourly
+field_name: field_salary_or_hourly
+entity_type: node
+bundle: employee
+label: 'Salary or Hourly'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

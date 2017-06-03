@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annual_salary
+    - node.type.employee
+id: node.employee.field_annual_salary
+field_name: field_annual_salary
+entity_type: node
+bundle: employee
+label: 'Annual Salary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

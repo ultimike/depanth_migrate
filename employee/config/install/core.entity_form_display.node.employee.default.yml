@@ -1,0 +1,122 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee.field_annual_salary
+    - field.field.node.employee.field_employee_department
+    - field.field.node.employee.field_employee_job_title
+    - field.field.node.employee.field_full_or_part_time
+    - field.field.node.employee.field_hourly_rate
+    - field.field.node.employee.field_salary_or_hourly
+    - field.field.node.employee.field_source_id
+    - field.field.node.employee.field_typical_hours
+    - node.type.employee
+  module:
+    - path
+id: node.employee.default
+targetEntityType: node
+bundle: employee
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_annual_salary:
+    weight: 35
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_employee_department:
+    weight: 38
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_employee_job_title:
+    weight: 37
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_full_or_part_time:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_hourly_rate:
+    weight: 36
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_salary_or_hourly:
+    weight: 33
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_source_id:
+    weight: 31
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_typical_hours:
+    weight: 34
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

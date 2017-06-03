@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.employee.field_annual_salary
+    - field.field.node.employee.field_employee_department
+    - field.field.node.employee.field_employee_job_title
+    - field.field.node.employee.field_full_or_part_time
+    - field.field.node.employee.field_hourly_rate
+    - field.field.node.employee.field_salary_or_hourly
+    - field.field.node.employee.field_source_id
+    - field.field.node.employee.field_typical_hours
+    - node.type.employee
+  module:
+    - user
+id: node.employee.teaser
+targetEntityType: node
+bundle: employee
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_annual_salary: true
+  field_employee_department: true
+  field_employee_job_title: true
+  field_full_or_part_time: true
+  field_hourly_rate: true
+  field_salary_or_hourly: true
+  field_source_id: true
+  field_typical_hours: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_typical_hours
+    - node.type.employee
+id: node.employee.field_typical_hours
+field_name: field_typical_hours
+entity_type: node
+bundle: employee
+label: 'Typical hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

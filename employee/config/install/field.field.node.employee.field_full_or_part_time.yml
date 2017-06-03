@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_or_part_time
+    - node.type.employee
+  module:
+    - options
+id: node.employee.field_full_or_part_time
+field_name: field_full_or_part_time
+entity_type: node
+bundle: employee
+label: 'Full or Part-Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
